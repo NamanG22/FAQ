@@ -1,0 +1,127 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(275, 100%, 97%);
+    margin: 0;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.back,.back2{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.back2{
+    display: none;
+}
+.faq{
+    display: grid;
+    width: 600px;
+    margin: auto;
+    background-color: white;
+    padding: 40px 40px 29px 40px;
+    border-radius: 15px;
+}
+.header{
+    display: flex;
+    margin-bottom: 21px;
+}
+.header h1{
+    margin: 0 0 0 29px;
+    margin-left: 29px;
+    margin-bottom: 0;
+    font-size: 56px;
+    color: hsl(292, 42%, 14%);
+    font-weight: 700;
+}
+.header img{
+    width: 35px;
+    height: 35px;
+    margin: auto 0;
+}
+section{
+    display: flex;
+}
+section h2{
+    font-size: 18px;
+    font-weight: 600;
+    color: hsl(292, 42%, 14%);
+}
+section .plus{
+    margin-left: auto;
+}
+section .minus{
+    display: none;
+}
+p{
+    overflow:hidden;
+    transition: max-height 0.7s;
+    height:auto;
+    max-height:600px;
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(292, 16%, 49%);
+    
+}
+p.hide{
+    margin: 0;
+    max-height: 0;
+}
+/* p.show{
+    display: block;
+    max-height: 1000px;
+} */
+h2:hover{
+    cursor: pointer;
+    color: rgb(175, 13, 175);
+}
+section img:hover{
+    cursor: pointer;
+}
+hr{
+    width: 100%;
+    border-color: hsl(275, 100%, 97%);
+    opacity: 0.1;
+}
+
+@media (max-width: 650px) {
+    .back{
+        display: none;
+    }
+    .back2{
+        display: block;
+    }
+    .faq{
+        padding: 25px 25px 10px;
+        width: 327px;
+        height: auto;
+        border-radius: 10px;
+    }
+    p{
+        font-size: 14px;
+        line-height: 21px;
+        margin-top: 5px;
+    }
+    .header{
+        margin-bottom: 10px;
+    }
+    .header h1{
+        font-size: 32px;
+        margin-left: 25px;
+    }
+    section h2{
+        font-size: 16px;
+        padding-right: 13px;
+    }
+    .header img{
+        width: 22px;
+        height: 21px;
+    }
+}
